@@ -80,7 +80,7 @@ module.exports = function(grunt) {
                     collapseWhitespace:true,
                 },
                 files:{
-                    'prebuild/index.html': 'src/index.html'
+                    'prebuild/index.html': 'src/index.html' 
                 }
             }
         },
@@ -104,7 +104,6 @@ module.exports = function(grunt) {
 
 
     grunt.registerTask('default',['watch']); 
-    grunt.registerTask('build',['less:production', 'htmlmin:dist','replace:dist','clean', 'uglify']);
+    grunt.registerTask('build',['less:production', 'replace:dist','htmlmin:dist','clean', 'uglify']);
  
-
 }
